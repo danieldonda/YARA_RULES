@@ -6,21 +6,22 @@ Este repositório contém um conjunto de regras YARA desenvolvidas para a detec�
 
 Neste repositório, você encontrará 4 regras YARA distintas, cada uma projetada para identificar diferentes aspectos e variantes do ransomware Lockbit:
 
-### Regra 1: CISA_10478915_01
-- **Finalidade**: Detecta amostras de trojan .bat envolvidas na execução do payload inicial e manipulação do registro.
-- **Tipo**: Trojan
+### Regra 1️⃣: LockBit3.CVE2023-4966_BAT.YARA
+- **Finalidade**: Detecta trojans .bat. 
+- **Tipo**: 🐎 Trojan
 
-### Regra 2: CISA_10478915_02
-- **Finalidade**: Identifica amostras de trojan PE32, focando em executáveis usados no ataque.
-- **Tipo**: Trojan
+### Regra 2️⃣: LockBit3.CVE2023-4966_DLL.YARA
+- **Finalidade**: Identifica trojans PE32.
+- **Tipo**: 🐎 Trojan
 
-### Regra 3: CISA_10478915_03
-- **Finalidade**: Detecta amostras de DLL trojan, visando DLLs que manipulam credenciais de autenticação.
-- **Tipo**: Trojan, Exploração de Credenciais
+### Regra 3️⃣: LockBit3.CVE2023-4966_EXE.YARA
+- **Finalidade**: Detecta DLLs trojan.
+- **Tipo**: 🔑 Exploração de Credenciais
 
-### Regra 4: CISA_10478915_04
-- **Finalidade**: Identifica scripts Python usados como backdoors para acesso remoto e comunicação C2.
-- **Tipo**: Backdoor, Acesso Remoto
+### Regra 4️⃣: LockBit3.CVE2023-4966_PY.YARA
+- **Finalidade**: Identifica scripts Python usados como backdoors.
+- **Tipo**: 🚪 Backdoor
+
 
 ## 🚀 Utilizando as Regras
 
